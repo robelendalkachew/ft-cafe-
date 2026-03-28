@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Order from Freetown cafe." />
+    <title>Order · Freetown cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Freetown cafe home">
+          <img
+            class="brand-logo"
+            data-site-logo
+            src="./assets/freetown-logo.svg"
+            width="52"
+            height="33"
+            alt=""
+          />
+          <span class="brand-text">
+            <span class="brand-name">Freetown cafe</span>
+            <span class="brand-tag">Order</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#menu">Menu</a>
+          <a class="nav-active" href="./order.html">Order</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="topbar">
+          <p class="pill pill-gold">
+            Pay with TeleBirr: <strong data-telebirr>0911402300</strong>
+          </p>
+          <h1 class="page-title">Order</h1>
+          <p class="muted">Set quantities with + / −, then fill in your details and submit.</p>
+        </div>
+
+        <div class="order-layout">
+          <div class="order-menu-panel">
+            <div id="orderItems"></div>
+          </div>
+
+          <aside class="order-sidebar">
+            <h2>Checkout</h2>
+            <p class="small muted" style="margin: 0 0 12px">
+              Total updates as you change quantities.
+            </p>
+            <div class="order-total-row">
+              <span class="strong">Total</span>
+              <span class="price" id="orderTotal">Br 0</span>
+            </div>
+
+            <form id="orderForm">
+              <label class="field" style="padding: 0; margin-top: 0">
+                <span>Name</span>
+                <input name="customerName" type="text" placeholder="Your name" autocomplete="name" />
+              </label>
+              <label class="field" style="padding: 0">
+                <span>Phone</span>
+                <input name="customerPhone" type="tel" placeholder="09xxxxxxxx" autocomplete="tel" />
+              </label>
+              <label class="field" style="padding: 0">
+                <span>Pickup or delivery</span>
+                <select name="orderType">
+                  <option value="pickup">Pickup</option>
+                  <option value="delivery">Delivery</option>
+                </select>
+              </label>
+              <label class="field" style="padding: 0">
+                <span>Notes</span>
+                <textarea name="note" rows="3" placeholder="Address, time, allergies…"></textarea>
+              </label>
+              <div class="notice" style="margin-top: 12px">
+                <span class="small muted">After submitting, send payment to TeleBirr </span>
+                <strong data-telebirr>0911402300</strong>
+              </div>
+              <div class="form-actions" style="padding: 14px 0 0">
+                <button class="btn btn-primary" type="submit" style="width: 100%">Submit order</button>
+              </div>
+              <p class="tiny muted" id="orderStatus" role="status" aria-live="polite" style="margin-top: 12px"></p>
+            </form>
+
+            <a class="btn btn-ghost" href="./index.html#menu" style="width: 100%; margin-top: 10px">← Back to menu</a>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Freetown cafe</p>
+        <a class="btn btn-ghost btn-sm" href="#top">Top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

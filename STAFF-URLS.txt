@@ -1,0 +1,16 @@
+Freetown cafe — staff pages (do not put these links on the public website)
+
+  Kitchen / orders:  worker.html
+  Admin dashboard:   admin.html
+
+Admin PIN (login to admin.html)
+  • Default: 2026  (if you never changed it)
+  • Change inside: open admin.html → log in → tab "Admin PIN"
+  • Or edit in code: script.js → FC.pins.admin = "yourpin"
+
+Bookmark these on staff phones or computers.
+Customers only use: index.html, order.html
+
+Replace your logo file:
+  Put your PNG/JPG in assets/ and in Admin → Website set "Logo image URL" to e.g. ./assets/my-logo.png
+  Or upload the logo in Admin (saves in the browser).
