@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Freetown cafe — fast food, soft & dry cakes, and fresh juices."
+    />
+    <title>Freetown cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Freetown cafe home">
+          <img
+            class="brand-logo"
+            data-site-logo
+            src="./assets/freetown-logo.svg"
+            width="52"
+            height="33"
+            alt="Freetown cafe"
+          />
+          <span class="brand-text">
+            <span class="brand-name">Freetown cafe</span>
+            <span class="brand-tag" data-site-bind="slogan">Fast food • Cakes • Juices</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a class="nav-active" href="./index.html">Home</a>
+          <a href="./index.html#menu">Menu</a>
+          <a href="./order.html">Order</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="pill">Welcome</p>
+            <h1 id="heroTitle">Coffee, food & fresh juice — all in one place.</h1>
+            <p class="lead" id="heroLead">
+              Enjoy fast food, soft and dry cakes, and chilled juices. Order for pickup or delivery.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./order.html">Place an order</a>
+              <a class="btn btn-ghost" href="#menu">Browse menu</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-logo-wrap">
+              <img
+                data-site-logo
+                src="./assets/freetown-logo.svg"
+                width="320"
+                height="200"
+                alt="Freetown cafe logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <h2>Menu</h2>
+            <p class="muted">Prices in Ethiopian Birr (Br). Tap a category to filter.</p>
+          </div>
+          <div class="menu-tabs" id="menuTabs" aria-label="Menu categories"></div>
+          <div class="menu-grid" id="menuGrid" aria-label="Menu items"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="specials">
+        <div class="container">
+          <div class="section-head">
+            <h2>Specials</h2>
+            <p class="muted">Ask us about combos and custom cakes.</p>
+          </div>
+          <div class="grid-2">
+            <article class="promo">
+              <div class="promo-copy">
+                <h3>Combo deals</h3>
+                <p>Build a meal with your favourite drink — perfect for lunch.</p>
+                <a class="btn btn-primary" href="./order.html">Order combo</a>
+              </div>
+              <div class="promo-art" aria-hidden="true">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+              </div>
+            </article>
+            <article class="promo">
+              <div class="promo-copy">
+                <h3>Cakes & events</h3>
+                <p>Birthday cakes and party orders — tell us your theme and date.</p>
+                <a class="btn btn-secondary" href="./index.html#contact">Contact us</a>
+              </div>
+              <div class="promo-art" aria-hidden="true">
+                <div class="blob blob-3"></div>
+                <div class="blob blob-4"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about">
+          <div>
+            <h2>About Freetown cafe</h2>
+            <p class="muted">
+              We serve fast food, soft and dry cakes, and fresh juices — with TeleBirr payment for easy checkout.
+            </p>
+            <ul class="checklist">
+              <li>Fast food cooked to order</li>
+              <li>Soft & dry cakes baked fresh</li>
+              <li>Juices blended daily</li>
+              <li>Custom cakes by request</li>
+            </ul>
+          </div>
+          <aside class="hours card">
+            <div class="card-head">
+              <h3>Opening hours</h3>
+              <p class="muted">Update these anytime in staff settings.</p>
+            </div>
+            <div class="hours-grid" role="table" aria-label="Opening hours">
+              <div role="row">
+                <div role="cell" class="muted">Mon – Fri</div>
+                <div role="cell" class="strong">8:00 – 21:00</div>
+              </div>
+              <div role="row">
+                <div role="cell" class="muted">Saturday</div>
+                <div role="cell" class="strong">9:00 – 22:00</div>
+              </div>
+              <div role="row">
+                <div role="cell" class="muted">Sunday</div>
+                <div role="cell" class="strong">12:00 – 20:00</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact">
+          <div class="contact-copy">
+            <h2>Contact</h2>
+            <p class="muted">Call, WhatsApp, or pay with TeleBirr.</p>
+            <div class="contact-cards">
+              <div class="mini-card">
+                <p class="small muted">Phone / WhatsApp / TeleBirr</p>
+                <p class="strong" id="phoneText">0911402300</p>
+                <button class="linklike" type="button" data-copy="#phoneText">Copy number</button>
+              </div>
+              <div class="mini-card">
+                <p class="small muted">Location</p>
+                <p class="strong" id="locationText">Add your street address in staff settings</p>
+                <button class="linklike" type="button" data-copy="#locationText">Copy</button>
+              </div>
+            </div>
+            <p class="tiny muted" id="copyStatus" role="status" aria-live="polite"></p>
+          </div>
+
+          <form class="form card" aria-label="Message" onsubmit="return false;">
+            <div class="card-head">
+              <h3>Message us</h3>
+              <p class="muted">For questions — ordering uses the Order page.</p>
+            </div>
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" placeholder="Name" autocomplete="name" />
+            </label>
+            <label class="field">
+              <span>Topic</span>
+              <select name="category">
+                <option value="order">Order question</option>
+                <option value="cake">Cake order</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="button" id="fakeSendBtn">Send</button>
+              <p class="tiny muted" id="sendStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Freetown cafe</p>
+        <a class="btn btn-ghost btn-sm" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
